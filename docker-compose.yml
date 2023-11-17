@@ -1,0 +1,16 @@
+services:
+  db:
+    image: 'postgres:latest'
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: user1
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: bank-app-project
+      APP_VERSION: 0.0.1
+      DB_SERVER: localhost
+      DB_PORT: 5432
+      DB_NAME: bank-app-project
+      DB_SCHEME: public
+      DB_USER: postgres
+      DB_PASSWORD: 123456
